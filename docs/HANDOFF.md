@@ -1,12 +1,14 @@
 # 当前交接
 
-## 2026-11-13 · 0.1.0 发布
+## 2026-11-13 · 0.1.0 已发布 GitHub Release
 
-按用户“发布 0.1.0”指令发布 GitHub Release v0.1.0，版本源 BottleAndMachineIcon/VERSION 保持 0.1.0。scripts/release.ps1 已重新构建、原生扫描并生成安装包与白名单源码包；构建 0 警告、0 错误，ModScanner PASS（43 methods，capabilities none）。DLL SHA256 为 ED4826A81078885B0201BEF43F0B1E4F5AE66FBE99B69022E52E9CDCE2DD6FDA，游戏程序集哈希未变。
+用户手动推送提交 3bc0477b79d8ee41a5caaa5ed70de18275fa0f0c 后，明确要求继续发布。已创建并发布 v0.1.0，标签指向该提交，安装包与白名单源码包均已上传并核对附件状态和大小。
 
-发布地址：https://github.com/KarlWang86/Probably-Stolen-BottleAndMachineIcon/releases/tag/v0.1.0 。发布回执与附件哈希保存在本地 releases/ 对应目录。源码包仅含白名单源码及文档，不含游戏程序集、原生 IL、路径配置或旧助手二进制。首次沙箱构建无法读取用户 NuGet.Config，经权限复核重试成功。
+发布地址：https://github.com/KarlWang86/Probably-Stolen-BottleAndMachineIcon/releases/tag/v0.1.0 。本地附件及发布回执位于 releases/0.1.0-20261113-214101-596/，publish-receipt.json 记录 Release ID、附件 ID、大小及 SHA256。安装包 SHA256：6E4E04165958D1B65A164E779BA682672BB1D08DB3062A5D6A0260C2BD116BE7；源码包 SHA256：A1A91D3E81F3E1579854BFB05A095F993C45B7A6C6D34AFBF28CAFF542092D1F。
 
-本次未新增或运行测试，未部署、启动游戏、修改存档/材料/订阅缓存，也未修改原化学助手。尚无独立工坊条目，不沿用 3836818025 或其上传工作区。离线扫描不代表游戏内验收；玩家仍需按下方交接清单验收，游戏内启用前须协调停用旧助手同类绘制。
+VERSION 保持 0.1.0。scripts/release.ps1 构建 0 警告、0 错误，原生 ModScanner PASS（43 methods，capabilities none）。DLL SHA256：ED4826A81078885B0201BEF43F0B1E4F5AE66FBE99B69022E52E9CDCE2DD6FDA；安装包内容已逐项对照扫描凭据核验。源码包不含游戏程序集、原生 IL、路径配置或旧助手二进制。
+
+未新增或运行测试，未部署、启动游戏、修改存档/材料/订阅缓存或原化学助手，未上传工坊。尚无独立工坊条目，不沿用 3836818025 或其上传工作区。离线扫描不代表游戏内验收；玩家仍需按下方清单验收，启用前须确认其他模组同类绘制已停用。
 
 ## 2026-11-13 · 0.1.0 独立实现可构建，未发布
 
