@@ -1,5 +1,15 @@
 # 当前交接
 
+## 2026-11-13 · 0.1.0 已发布独立工坊条目
+
+玩家澄清“发布”为上传工坊、订阅使用；保留已误发的 GitHub Release，后续仅发布工坊。已在 AppID 4348910 下创建新公开条目 3838955514：https://steamcommunity.com/sharedfiles/filedetails/?id=3838955514 。english 运行文件/封面/标题简介及 schinese 标题简介均收到 k_EResultOK，均不要求接受新协议，结果为 submitted；未做发布后远端复查。
+
+独立上传工作区为仓库内 WorkshopUpload-BottleAndMachineIcon/（Git 忽略），未使用化学助手条目或其上传目录。运行文件只有 BottleAndMachineIcon.dll、manifest.xml、使用说明.txt。自动回执为 upload-result-0.1.0.json；条目编号保存在 docs/WorkshopItemId.txt，准备脚本会沿用该编号避免重复建项。新增 Tools/WorkshopPublisher 与 prepare-workshop/publish-workshop 脚本，使用当前 Steam 客户端会话，不启动游戏。
+
+按玩家指定读取会话 01a1cfef-8fc1-7f72-a193-d2260fc1a121，采用已确认的 material-icon-layout.html 布局图作为工坊封面。docs/workshop-layout-source.html 保存来源 HTML，docs/workshop-preview.png 为渲染封面；明确标注非游戏截图，后续玩家补实图。没有修改游戏 UI 布局或运行时源码。
+
+运行说明改为工坊订阅使用，随后重新 build.ps1：0 警告、0 错误，原生 ModScanner PASS（43 methods，capabilities none）。工坊 DLL SHA256 为 0B390E1F0A29E9942D2BADC950D2BE582C63B12F06CEEF2D0DEB451F997E30E4；三个上传文件与 build/validation.json 哈希一致。未新增或运行测试、部署、启动游戏、修改材料/存档/订阅缓存，也未修改原化学助手。游戏内验收仍待玩家完成；启用前确认其他模组同类绘制已停用。
+
 ## 2026-11-13 · 0.1.0 已发布 GitHub Release
 
 用户手动推送提交 3bc0477b79d8ee41a5caaa5ed70de18275fa0f0c 后，明确要求继续发布。已创建并发布 v0.1.0，标签指向该提交，安装包与白名单源码包均已上传并核对附件状态和大小。

@@ -18,7 +18,7 @@ Get-ChildItem -LiteralPath $taskProject -File | Where-Object {
 foreach ($name in @('AGENTS.md','README.md','LICENSE','Directory.Build.props','NuGet.Config','.gitignore')) {
     Copy-Item -LiteralPath (Join-Path $repoRoot $name) -Destination $sourceRoot
 }
-foreach ($dir in @('docs','scripts','Tools/NativeScan','Tools/AssemblyQuery')) {
+foreach ($dir in @('docs','scripts','Tools/NativeScan','Tools/AssemblyQuery','Tools/WorkshopPublisher')) {
     $target = Join-Path $sourceRoot $dir
     New-Item -ItemType Directory -Path $target -Force | Out-Null
     Get-ChildItem -LiteralPath (Join-Path $repoRoot $dir) -File | Where-Object {

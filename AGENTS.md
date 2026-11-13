@@ -9,4 +9,4 @@
 - PowerShell 脚本用 UTF8 BOM，兼容 Windows PowerShell 5；build.ps1 只构建和扫描，离线 PASS 不代表游戏内验收。
 - 不自行启动游戏、部署、上传、改存档、操作材料或修改订阅缓存。专项部署须显式执行并记录同类模组状态；旧助手仍带图标时须避免重复绘制。
 - VERSION 为唯一版本源；变更记 docs/CHANGELOG.md，当前状态记 docs/HANDOFF.md。推进版本前检查 Git，已有旧版未提交工作先完成旧版提交。
-- 尚无本模组工坊条目，不得复用化学助手条目 3836818025 或其上传工作区。
+- 本模组工坊条目为 3838955514，编号保存在 docs/WorkshopItemId.txt；独立上传目录为 WorkshopUpload-BottleAndMachineIcon/。不得复用化学助手条目 3836818025 或其上传工作区。

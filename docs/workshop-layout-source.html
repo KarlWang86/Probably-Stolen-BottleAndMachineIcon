@@ -1,0 +1,104 @@
+<div id="material-icon-layout" aria-label="原材料图标位置预览">
+  <div class="layout-sample viz-dotted-background">
+    <section class="sample-block">
+      <div class="sample-title">容器本体 · 中间纵排</div>
+      <div class="bottle-examples">
+        <div class="example">
+          <div class="bottle" role="img" aria-label="单种原料图标位于瓶身正中">
+            <div class="bottle-cap"></div><div class="bottle-neck"></div>
+            <div class="bottle-body"><div class="bottle-ribs"></div><div class="material-list vertical"><span class="material coffee" data-kind="0" data-tooltip="咖啡豆"><i data-lucide="bean" aria-hidden="true"></i></span></div></div>
+          </div>
+          <span class="sample-caption">单种</span>
+        </div>
+        <div class="example">
+          <div class="bottle" role="img" aria-label="多种原材料在瓶身中间纵向排列">
+            <div class="bottle-cap"></div><div class="bottle-neck"></div>
+            <div class="bottle-body"><div class="bottle-ribs"></div><div class="material-list vertical"><span class="material coffee" data-kind="0" data-tooltip="咖啡豆"><i data-lucide="bean" aria-hidden="true"></i></span><span class="material dream" data-kind="1" data-tooltip="梦帽菇"><i data-lucide="sprout" aria-hidden="true"></i></span><span class="material nightmare" data-kind="2" data-tooltip="梦魇帽菇"><i data-lucide="sprout" aria-hidden="true"></i></span></div></div>
+          </div>
+          <span class="sample-caption">多种</span>
+        </div>
+      </div>
+    </section>
+    <section class="sample-block machine-example">
+      <div class="sample-title">机器本体 · 左上角横排</div>
+      <div class="machine-scene">
+        <div class="machine-window" aria-label="机器操作窗口，标题栏不放原料图标">
+          <div class="window-title">化学制剂成型机 <span aria-hidden="true">×</span></div>
+          <div class="window-content"><div><div class="window-label">化学模组</div><div class="modules"><span></span><span></span><span></span><span></span></div></div><div><div class="window-label">容器</div><div class="slot"><i data-lucide="bottle-wine" aria-hidden="true"></i></div></div></div>
+          <div class="window-caption">操作窗口</div>
+        </div>
+        <div class="machine-item-wrap">
+          <div class="machine-item" role="img" aria-label="机器外部图标：原料位于左上角，右上角保留其他模组的状态位置">
+            <div class="machine-top"></div><div class="machine-screen"></div><div class="machine-grille"></div><div class="machine-tank"></div>
+            <div class="material-list horizontal"><span class="material coffee" data-kind="0" data-tooltip="咖啡豆"><i data-lucide="bean" aria-hidden="true"></i></span><span class="material dream" data-kind="1" data-tooltip="梦帽菇"><i data-lucide="sprout" aria-hidden="true"></i></span><span class="material nightmare" data-kind="2" data-tooltip="梦魇帽菇"><i data-lucide="sprout" aria-hidden="true"></i></span></div>
+            <span class="other-status" data-tooltip="右上角留给其他模组的机器状态"><i data-lucide="zap" aria-hidden="true"></i></span>
+          </div>
+          <div class="sample-caption">机器本体</div>
+        </div>
+      </div>
+    </section>
+    <div class="sample-legend"><span><i data-lucide="bean" aria-hidden="true"></i>咖啡豆</span><span><i data-lucide="sprout" aria-hidden="true"></i>梦帽菇／梦魇帽菇</span><span>位置示意 · 实装使用游戏原图</span></div>
+  </div>
+</div>
+<style>
+#material-icon-layout {--game-bg:#333437;--game-panel:#414344;--game-line:#777b76;--game-ink:#c6c7ad;--game-slot:#24252a;--material-size:24px;color:var(--game-ink);font:14px system-ui,sans-serif;}
+#material-icon-layout .layout-sample {display:grid;gap:26px;padding:22px 14px;background-color:transparent;}
+#material-icon-layout .sample-block {display:grid;gap:16px;}
+#material-icon-layout .sample-title {font-weight:500;color:light-dark(#343638,#dbddcf);}
+#material-icon-layout .bottle-examples {display:flex;justify-content:center;gap:76px;}
+#material-icon-layout .example {display:grid;justify-items:center;gap:12px;}
+#material-icon-layout .bottle {width:90px;height:190px;position:relative;}
+#material-icon-layout .bottle-cap {position:absolute;top:0;left:28px;width:34px;height:13px;background:#8d9c96;border:3px solid #c1c4ad;}
+#material-icon-layout .bottle-neck {position:absolute;top:16px;left:32px;width:28px;height:17px;background:#778b89;}
+#material-icon-layout .bottle-body {position:absolute;top:28px;bottom:0;left:6px;right:6px;background:linear-gradient(to bottom,#90aaa4 0%,#566e6b 65%,#84604b 65%,#684534 100%);border:4px solid #bac0ae;border-radius:18px 18px 12px 12px;}
+#material-icon-layout .bottle-ribs {position:absolute;inset:22px 0 10px;background:repeating-linear-gradient(to bottom,transparent 0 13px,#c4c9b16b 14px 16px);}
+#material-icon-layout .material-list {display:flex;position:absolute;gap:5px;z-index:2;}
+#material-icon-layout .vertical {flex-direction:column;left:50%;top:50%;transform:translate(-50%,-50%);}
+#material-icon-layout .material {display:flex;align-items:center;justify-content:center;width:var(--material-size);height:var(--material-size);flex:0 0 var(--material-size);background:#24252aeb;border-radius:3px;color:#dfc398;}
+#material-icon-layout .material svg {width:calc(var(--material-size) - 4px);height:calc(var(--material-size) - 4px);}
+#material-icon-layout .dream {color:#c8c0e8;}
+#material-icon-layout .nightmare {color:#eea5ad;}
+#material-icon-layout .sample-caption {text-align:center;color:light-dark(#555a57,#b8bcb1);}
+#material-icon-layout .machine-scene {display:flex;gap:22px;align-items:center;justify-content:center;flex-wrap:wrap;}
+#material-icon-layout .machine-window {background:var(--game-bg);border:3px solid var(--game-line);width:318px;max-width:100%;box-sizing:border-box;}
+#material-icon-layout .window-title {padding:9px 10px;display:flex;justify-content:space-between;border-bottom:3px solid var(--game-line);font-weight:500;}
+#material-icon-layout .window-title span {background:#b2b4a1;color:#3b3034;padding:0 5px;}
+#material-icon-layout .window-content {display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:12px;}
+#material-icon-layout .window-label {text-align:center;background:#9da393;color:#353739;padding:3px;margin-bottom:8px;}
+#material-icon-layout .modules {display:grid;grid-template-columns:1fr 1fr;gap:7px;}
+#material-icon-layout .modules span {height:36px;background:repeating-linear-gradient(0deg,#334f42 0 7px,#bd9c68 7px 9px);border:3px solid #666b60;}
+#material-icon-layout .slot {height:93px;display:flex;align-items:center;justify-content:center;background:var(--game-slot);color:#adbdb3;}
+#material-icon-layout .slot svg {width:40px;height:66px;}
+#material-icon-layout .window-caption {padding:6px 10px;text-align:center;color:#b8bba9;}
+#material-icon-layout .machine-item-wrap {display:grid;gap:12px;justify-items:center;}
+#material-icon-layout .machine-item {width:170px;height:162px;position:relative;background:#365955;border:5px solid #66867d;box-shadow:inset 0 0 0 5px #273b39;box-sizing:border-box;}
+#material-icon-layout .machine-top {position:absolute;left:9px;right:9px;top:26px;height:23px;background:repeating-linear-gradient(45deg,#88958a 0 3px,#5d7069 3px 6px);border-bottom:4px solid #263e3b;}
+#material-icon-layout .machine-screen {position:absolute;left:11px;top:66px;width:47px;height:43px;background:repeating-linear-gradient(0deg,#b7c8b5 0 3px,#273b3d 3px 8px);border:6px solid #263e3b;}
+#material-icon-layout .machine-grille {position:absolute;left:11px;bottom:10px;width:47px;height:17px;background:repeating-linear-gradient(90deg,#748e84 0 3px,#243a36 3px 7px);}
+#material-icon-layout .machine-tank {position:absolute;right:12px;top:68px;bottom:10px;width:45px;background:repeating-linear-gradient(0deg,#85a89d 0 7px,#395e59 7px 11px);border:4px solid #273d38;border-radius:7px;}
+#material-icon-layout .horizontal {top:4px;left:4px;gap:3px;}
+#material-icon-layout .other-status {position:absolute;right:3px;top:3px;display:flex;align-items:center;justify-content:center;width:20px;height:20px;color:#f1cf7b;background:#27302c;}
+#material-icon-layout .other-status svg {width:16px;height:16px;}
+#material-icon-layout .sample-legend {display:flex;gap:12px 20px;flex-wrap:wrap;justify-content:center;color:light-dark(#555a57,#b8bcb1);}
+#material-icon-layout .sample-legend span {display:flex;align-items:center;gap:5px;}
+#material-icon-layout .sample-legend svg {width:16px;height:16px;}
+@media(max-width:440px){#material-icon-layout .bottle-examples{gap:50px;}#material-icon-layout .machine-scene{gap:16px;}#material-icon-layout .layout-sample{padding:18px 8px;}}
+</style>
+<script>
+(() => {
+  const root = document.getElementById('material-icon-layout');
+  const state = { count: 3, size: 24 };
+  function render() {
+    root.style.setProperty('--material-size', state.size + 'px');
+    for (const icon of root.querySelectorAll('.machine-item .material,.example:nth-child(2) .material')) {
+      icon.style.display = Number(icon.dataset.kind) < state.count ? 'flex' : 'none';
+    }
+  }
+  render();
+  if (globalThis.Tweak) {
+    const tweak = new Tweak({ container: root, onChange: render });
+    tweak.addSlider(state, 'size', { label: '原料图标大小', min: 16, max: 28, step: 2, unit: 'px' });
+    tweak.addSlider(state, 'count', { label: '原料种类数量', min: 1, max: 3, step: 1 });
+  }
+})();
+</script>
