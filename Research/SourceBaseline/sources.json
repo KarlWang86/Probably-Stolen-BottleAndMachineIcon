@@ -1,0 +1,12 @@
+﻿[
+  {
+    "Source": "ChemAssistPlus/MaterialIcons.cs",
+    "Copy": "MaterialIcons.cs",
+    "SHA256": "928AED5CCA458A88AB3BE316FAF3A5EEE29FE4077205E2C8972208F6574097C9"
+  },
+  {
+    "Source": "docs/DEVELOPMENT.md",
+    "Copy": "DEVELOPMENT.original.md",
+    "SHA256": "CB07965943D2F451D6D0851BBCD33F04FDCC3550DF866D2E5AC04DC4D4BDDE3D"
+  }
+]

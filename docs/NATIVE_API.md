@@ -1,0 +1,7 @@
+﻿# 图标原生接口缓存
+
+摘自化学助手 0.4.9 的 docs/NATIVE_API.md；版本号指来源版本。独立模组尚未完成游戏内验证，游戏程序集哈希改变或接口不足时再定向查询。原生 IL 仅在本地 Research/，不随源码分发。
+
+- 0.4.7定向核对：GameItem.GetTagReadonly从modifiedState取TagState并Clone；ModifyTag(...,true)修改state且跳过ValidateShapeState，原生TransferLiquid批量走此路径。TagSystem.GetTag会InitTagString，不能用它做无副作用的原始状态读取；图标改用state.dict.TryGetValue读取现有CURRENT_PART，蒸发器路线观察也共用该实际液体读取。证据Research/icon-refresh-{GetTagReadonly,ModifyTag,TagSystem-GetTag}-il.txt。不通过UI刷新去改材料或强制原生化学缓存。
+- 0.4.6按玩家截图与已确认预览修正图标定位：GameItemElement.middle不等于槽位实际瓶图边界，库存gridSize×modifiedShape不能用于推算所有机器槽位图片坐标。改从background/fakeBackground的RectTransform.GetWorldCorners读取世界边界，转到middle/fakeMiddle局部空间并与有效祖先RectMask2D/Mask相交；节点用中心锚点/localPosition居中纵排。机器同样叠加本体左上横排，停止使用PixelWindow.AddHeaderButton。Unity几何运算只读，不修改原生物品形状或窗口布局；实际裁切/位置仍需游戏内验收。
+- 原材料图标0.4.5：HydroponicDirectory.CoffeeBean/DreamCap/NightmareCap的原生sprite分别为Items/items_hydroponic_plant下coffee_bean/dream_cap/nightmare_cap；RenderHandler.TryLoadFromAtlas只读加载。HandleNomoreReaction消耗dream_cap_extract，故nomore也映射梦帽菇。TreeNodeRender.Instantiate().SetParent可建立独立显示节点；GameItemElement.middle/fakeMiddle为占格原点，rotator/fakeRotator才施加物品旋转；background/fakeBackground的image.enabled及alpha表示原生实物/拖影显隐。PixelWindow.AddHeaderButton经MachineryValidate在右上由右到左布置并为标题留宽，RemoveHeaderButton只ResetParent、不销毁，故需另外Destroy自建按钮节点。证据Research/containericons-*-il.txt；纯显示，无新增Harmony补丁。

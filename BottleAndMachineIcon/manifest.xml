@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <ID>bottle_and_machine_icon</ID>
+  <Name>容器与机器图标 / Bottle and Machine Icons</Name>
+  <Author>wangkan</Author>
+  <ModVersion>0.1.0</ModVersion>
+  <Description>容器与机器图标0.1.0。按实际成分显示咖啡豆、梦帽菇和梦魇帽菇，覆盖容器、机器本体及机器窗口容器槽。只读显示。</Description>
+  <GameVersions><Version>0.46</Version></GameVersions>
+  <Prerequisites />
+  <Assemblies><Assembly>BottleAndMachineIcon.dll</Assembly></Assemblies>
+  <Capabilities />
+</Manifest>

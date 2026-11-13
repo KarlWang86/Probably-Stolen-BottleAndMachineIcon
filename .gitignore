@@ -1,0 +1,14 @@
+﻿**/bin/
+**/obj/
+**/build/
+**/releases/
+*.zip
+*.dll
+*.exe
+*.pdb
+*.bin
+**/GameRoot.local.txt
+.vs/
+.vscode/
+# 原生方法体仅供本地查阅。
+/Research/*-il.txt
